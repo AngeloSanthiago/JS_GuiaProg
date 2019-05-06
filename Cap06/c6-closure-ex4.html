@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <title>Cap06 Scripts EX04</title>
+    <script>
+        function funcaoExterna() {
+        alert("Função Externa");
+            function funcaoInterna() {
+            alert("Função Interna");
+            };
+            return funcaoInterna;
+        };
+        var referenciaFuncao = funcaoExterna();
+    </script>
+</head>
+    <body>
+        
+        <!-- <button type="button" onclick="variavelGlobal()">Executar Função Interna</button> -->
+        
+        <!-- se colocar o propriedade type o autocomplite não funcionar -->
+        <!-- <script src="c6-closure-ex4.js"></script> -->
+
+        <button type="button" onclick="referenciaFuncao()">Executar Função Externa</button>
+    </body>
+</html>
