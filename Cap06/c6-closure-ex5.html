@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <title>Cap06 Scripts EX05</title>
+    <!--Página 175-->
+    <script>  
+        window.onload = function() {
+            var botao = document.getElementsByTagName('button');
+            for (let i = 0; i < botao.length; i++) {
+                botao[i].onclick = function () {
+                    alert("Você clicou o botao " + i);
+                };
+            };
+        }
+    </script>
+</head>
+    <body>        
+        <button type="button">Botao 0</button>
+        <button type="button">Botao 1</button>
+        <button type="button">Botao 2</button>
+        <button type="button">Botao 3</button>
+    </body>
+</html>
